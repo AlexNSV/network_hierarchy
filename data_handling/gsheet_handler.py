@@ -13,8 +13,7 @@ from functools import wraps
 from data_handling.datavalue import DataValue, get_datavalue_dict
 
 def setup_google_client():
-    # client email: docanomi-gsheet@docanomi.iam.gserviceaccount.com
-    gc = gspread.service_account(filename='../docanomi-eb8ee4c227f6.json')
+    gc = gspread.service_account(filename='../your_service_account.json')
     logging.debug("Google client set up")
     return gc
 
